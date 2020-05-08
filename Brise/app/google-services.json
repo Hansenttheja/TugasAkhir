@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "433361074752",
+    "firebase_url": "https://brise-66419.firebaseio.com",
+    "project_id": "brise-66419",
+    "storage_bucket": "brise-66419.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433361074752:android:5f3e9f6abae8f373a03da5",
+        "android_client_info": {
+          "package_name": "com.example.brise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433361074752-gkdag2ef79tkd26tdbb20g7m5l9ka0ik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.brise",
+            "certificate_hash": "7238bc0209a8ded5d1be776ef87d4b149a2b3528"
+          }
+        },
+        {
+          "client_id": "433361074752-smiak8d86eh3aat3464p2d6drq5lnp8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0Ysit65fFrKzn_yYreb_UBbnc_oSj-0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433361074752-smiak8d86eh3aat3464p2d6drq5lnp8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

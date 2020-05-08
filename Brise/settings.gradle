@@ -1,0 +1,2 @@
+rootProject.name='Brise'
+include ':app'
