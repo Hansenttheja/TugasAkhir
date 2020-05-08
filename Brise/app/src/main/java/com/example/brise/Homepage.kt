@@ -5,20 +5,21 @@ import android.os.Bundle
 import android.view.Menu
 import android.widget.Button
 import android.widget.Toast
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.FragmentActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.navigation.NavigationView
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import kotlinx.android.synthetic.main.app_bar_homepage.*
+
 
 class Homepage : AppCompatActivity() {
 
@@ -53,9 +54,14 @@ class Homepage : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         btnLogout.setOnClickListener {
-            signOut()
-            val user = auth.currentUser
-            updateUI(user)
+            val mAuth = FirebaseAuth.getInstance()
+            try {
+                mAuth.signOut()
+                Toast.makeText(this, "User Sign out!", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, MainActivity::class.java))
+            } catch (e: Exception) {
+                Toast.makeText(this, "onClick: Exception ",Toast.LENGTH_SHORT ).show()
+            }
         }
     }
 
@@ -78,8 +84,7 @@ class Homepage : AppCompatActivity() {
 
         }
     }
-    private fun signOut(){
-        auth.signOut()
-    }
+
+
 }
 
