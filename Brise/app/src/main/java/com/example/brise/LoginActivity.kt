@@ -2,13 +2,11 @@ package com.example.brise
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_regis.*
 
 lateinit var auth: FirebaseAuth
 class LoginActivity : AppCompatActivity() {
@@ -35,9 +33,9 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun doLogin() {
-        if (Username.text.toString().isEmpty()){
-            Username.error="Please Enter Email"
-            Username.requestFocus()
+        if (Email.text.toString().isEmpty()){
+            Email.error="Please Enter Email"
+            Email.requestFocus()
             return
         }
 //        if (Patterns.EMAIL_ADDRESS.matcher(RegisEmail.text.toString()).matches()){
@@ -45,12 +43,12 @@ class LoginActivity : AppCompatActivity() {
 //            RegisEmail.requestFocus()
 //            return
 //        }
-        if (Password.text.toString().isEmpty()){
-            Password.error="Please Enter Password"
-            Password.requestFocus()
-            return
+        if (password.text.toString().isEmpty()){
+            password.error="Please Enter Password"
+            password.requestFocus()
+
         }
-        auth.signInWithEmailAndPassword(Username.text.toString(), Password.text.toString())
+        auth.signInWithEmailAndPassword(Email.text.toString(), password.text.toString())
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(baseContext, "Login Successful.",

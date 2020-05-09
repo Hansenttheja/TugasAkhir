@@ -1,9 +1,12 @@
 package com.example.brise
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
 import android.view.Menu
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -19,12 +22,17 @@ import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import kotlinx.android.synthetic.main.activity_regis.*
+import kotlinx.android.synthetic.main.activity_regis.DisplayEmail
+import kotlinx.android.synthetic.main.nav_header_homepage.*
 
 
 class Homepage : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     lateinit var btnLogout : Button
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -85,6 +93,17 @@ class Homepage : AppCompatActivity() {
         }
     }
 
+    private fun getUserProfile() {
+        // [START get_user_profile]
+        val user = auth.currentUser
+        user?.let {
 
+            val name1 = user.displayName
+            val email = user.email
+            val photoUrl = user.photoUrl
+
+        }
+
+    }
 }
 
