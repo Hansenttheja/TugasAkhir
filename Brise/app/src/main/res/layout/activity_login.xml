@@ -33,16 +33,6 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <EditText
-            android:id="@+id/Username"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/form"
-            android:drawableStart="@drawable/user"
-            android:drawableLeft="@drawable/user"
-            android:hint="@string/masukan_username"
-            android:padding="10dp"></EditText>
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="10dp"></RelativeLayout>
@@ -73,7 +63,9 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"></RelativeLayout>
+            android:layout_height="50dp">
+
+        </RelativeLayout>
 
         <Button
             android:id="@+id/BtnLogin"

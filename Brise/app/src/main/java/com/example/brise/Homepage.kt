@@ -24,6 +24,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_regis.*
 import kotlinx.android.synthetic.main.activity_regis.DisplayEmail
+import kotlinx.android.synthetic.main.app_bar_homepage.*
 import kotlinx.android.synthetic.main.nav_header_homepage.*
 
 
@@ -70,6 +71,10 @@ class Homepage : AppCompatActivity() {
             } catch (e: Exception) {
                 Toast.makeText(this, "onClick: Exception ",Toast.LENGTH_SHORT ).show()
             }
+        }
+
+        bab1.setOnClickListener {
+            startActivity(Intent(this, bab1page1::class.java))
         }
     }
 

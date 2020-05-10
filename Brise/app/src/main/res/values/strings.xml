@@ -47,6 +47,8 @@
     <string name="app_info">App Info</string>
     <string name="logout">Logout</string>
     <string name="enter_to_play">Enter to play</string>
+    <string name="bab_1" />
+    <string name="bab1">Bab 1</string>
 
 
 </resources>
