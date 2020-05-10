@@ -4,3 +4,6 @@ Aplikasi yang dipakai dalam pengerjaan TA :
 3. Google Chrome (web Untuk mencari caranya)
 4. Whatsapp ( Diskusi dan saling bertukar file)
 5. Line ( Meminta Batuan)
+6. M.Word ( peringkasan materi)
+7. Figma (Prototype)
+8. Youtube ( Pencarian Cara)
