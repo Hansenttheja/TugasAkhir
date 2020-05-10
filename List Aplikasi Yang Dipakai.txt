@@ -1,0 +1,6 @@
+Aplikasi yang dipakai dalam pengerjaan TA : 
+1. Android Studio
+2. Firebase (web)
+3. Google Chrome (web Untuk mencari caranya)
+4. Whatsapp ( Diskusi dan saling bertukar file)
+5. Line ( Meminta Batuan)
