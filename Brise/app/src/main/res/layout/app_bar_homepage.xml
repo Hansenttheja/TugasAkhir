@@ -43,7 +43,7 @@
 
     <Button
         android:id="@+id/bab1"
-        android:layout_width="194dp"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="100dp"
