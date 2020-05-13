@@ -32,23 +32,26 @@
 
     <Button
         android:id="@+id/buttonLogout"
-        android:layout_width="wrap_content"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:text="@string/log_out"
         android:layout_gravity="bottom|left"
-        android:layout_marginBottom="30dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttonbackground"
+        android:text="@string/log_out"
         tools:ignore="RtlHardcoded" />
 
     <Button
         android:id="@+id/bab1"
-        android:layout_width="wrap_content"
+        android:layout_width="194dp"
         android:layout_height="wrap_content"
-        android:text="@string/bab1"
-        android:layout_marginTop="100dp"
-        android:textSize="30sp"
         android:layout_marginLeft="30dp"
-        android:width="150dp" />
+        android:layout_marginTop="100dp"
+        android:width="150dp"
+        android:background="@drawable/buttonbackground"
+        android:text="@string/bab1"
+
+        android:textSize="30sp" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

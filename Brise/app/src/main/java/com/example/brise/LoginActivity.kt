@@ -70,7 +70,7 @@ class LoginActivity : AppCompatActivity() {
         if(user != null){
             startActivity(Intent(this, Homepage::class.java))
         }else{
-            Toast.makeText(baseContext, "Authentication failed.",
+            Toast.makeText(baseContext, "User has yet to sign in",
                 Toast.LENGTH_SHORT).show()
 
         }
